@@ -24,7 +24,7 @@ async def cmd_start(message: types.Message):
 @dp.message_handler()#content_types=[types.ContentType.ANY])
 async def get_messages(message: types.Message):
 	# игнорируем регистр в котором написано сообщение
-    if message.text.lower() == "Хвоста":
+    if message.text.lower() == "хвоста":
     	
     	# получаем список картинок из нужной папки
     	photos = os.listdir(PHOTO_DIR)
